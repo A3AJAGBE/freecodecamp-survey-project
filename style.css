@@ -1,0 +1,22 @@
+body {
+    background-color: #F7FBF4;
+    color: #040401;
+}
+
+form {
+    background-color: #132607;
+    color: #F7FBF4;
+    border-radius: 20px;
+}
+
+form textarea {
+    resize: none;
+}
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
+ }
