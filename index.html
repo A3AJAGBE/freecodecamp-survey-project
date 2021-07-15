@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tech Interest Survey Form</title>
+</head>
+<body>
+    <main class="px-4 py-4">
+        <h1 id="title" class="text-center fw-bold">Tech Interest Survey</h1>
+        <p id="description" class="text-center lead">I am curious about your tech background.</p>
+
+        <form id="survey-form" class="px-4 py-4">
+            <div class="mb-3">
+                <label for="name" id="name-label" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Jane Bay" required>
+              </div>
+
+            <div class="mb-3">
+              <label for="email"  id="email-label" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="jane.bay@placeholder.co" required>
+            </div>
+
+            <div class="mb-3"> 
+              <label for="number" id="number-label" class="form-label">How many programming language(s) can you work with? </label>
+              <input type="number" id="number" class="form-control" id="number-label" min="1" max="10" placeholder="Between 1 and 10" required >
+            </div>
+
+            <div class="mb-3" id="dropdown">
+                <label for="dropdown-label" class="form-label"> What is your number one programming language?</label>
+
+                <select class="form-select" aria-label=".form-select example" required>
+                    <option selected>Programming Languages</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                    <option value="csharp">C#</option>
+                    <option value="r">R</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="go">Go</option>
+                    <option value="dart">Dart</option>
+                    <option value="swift">Swift</option>
+                  </select>
+            </div>
+
+            <div class="mb-3" id="radio">
+                <p>Would you recommend that language to a beginner?</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="yes"> 
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="no" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="not sure">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Not sure
+                    </label>
+                  </div>
+
+            </div>
+
+            <div class="mb-3" id="checkbox">
+                <p>Select the framework(s) you know</p>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Django" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Django
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Flask" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Flask
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Laravel" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Laravel
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="React.js" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        React.js
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Vue.js" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                       Vue.js
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Node.js" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Node.js
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="CakePHP" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        CakePHP
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Angular JS" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Angular JS
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Express" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Express
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="mb-3" id="textarea">
+                <label for="exampleFormControlTextarea1" class="form-label">Do you have anything else you want me to know? </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" id="submit" class="btn btn-lg btn-success">Submit</button>
+              </div>
+          </form>
+        
+    </main>
+</body>
+</html>
